@@ -9,6 +9,17 @@ function getAll(req, res) {
   }).select('-__v');
 }
 
+
+function getPost(req, res) {
+  // console.log(req.params)
+  var id = req.params.id
+  Post.findById({_id: id}, function(err, post) {
+    if(err) res.json({message: 'Could not find the post b/c:' + err})
+
+    res.json({post: post})
+  })
+}
+
 // POST
 function createPost(req, res) {
   console.log('in POST');
@@ -25,5 +36,6 @@ function createPost(req, res) {
 
 module.exports = {
   getAll: getAll,
+  getPost: getPost,
   createPost: createPost
 }
