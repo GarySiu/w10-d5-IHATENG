@@ -5,7 +5,7 @@ function getAll(req, res) {
   Post.find(function(err, posts) {
     if(err) res.json({message: 'Could not find any posts'});
 
-    res.json({posts: posts});
+    res.json(posts);
   }).select('-__v');
 }
 
@@ -30,7 +30,7 @@ function createPost(req, res) {
   post.save(function(err) {
     if(err) res.json({messsage: 'Could not ceate post b/c:' + err});
 
-    res.json({post: post});
+    res.json(post);
   });
 }
 

@@ -1,2 +1,2 @@
 angular
-  .module('hateApp', [])
+  .module('hateApp', ['ngResource'])
