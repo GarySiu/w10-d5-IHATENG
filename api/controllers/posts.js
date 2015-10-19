@@ -16,7 +16,7 @@ function getPost(req, res) {
   Post.findById({_id: id}, function(err, post) {
     if(err) res.json({message: 'Could not find the post b/c:' + err})
 
-    res.json({post: post})
+    res.json(post)
   })
 }
 

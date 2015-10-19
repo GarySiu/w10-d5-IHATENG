@@ -1,3 +1,7 @@
-body {
-  /*background: deeppink;*/
+nav {
+  color: #FFF;
+}
+
+nav h1 {
+  text-align: center;
 }
