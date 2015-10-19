@@ -2,6 +2,28 @@ nav {
   color: #FFF;
 }
 
-nav h1 {
+body {
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.navbar {
+  background: #4E555D;
+}
+
+.navbar-heading {
   text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.tagline {
+  font-size: 16px;
+}
+
+.post-title {
+  font-size: 18px;
 }
