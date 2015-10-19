@@ -9,5 +9,6 @@ function PostsController($resource) {
 
   var Post = $resource('http://localhost:3000/posts/:id', { id: '@_id' })
   vm.posts = Post.query();
-  
+
+  vm.showForm = false;
 }

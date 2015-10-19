@@ -6,6 +6,10 @@ body {
   font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
+form {
+  margin-bottom: 20px;
+}
+
 .navbar {
   background: #4E555D;
 }
